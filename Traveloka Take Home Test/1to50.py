@@ -13,6 +13,9 @@ a=1
 while(a!=51):
     driver.find_element(By.XPATH, "//div[normalize-space()='"+str(a)+"']//span[@class='box']").click()
     print("number "+str(a)+" are clicked")
+    if(a%6==0):
+        time.sleep(1)
+
     a=a+1
 
 print("Quiz are completed")
